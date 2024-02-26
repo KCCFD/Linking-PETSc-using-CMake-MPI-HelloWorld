@@ -11,7 +11,7 @@ git clone -b release https://gitlab.com/petsc/petsc.git petsc
 
 Step 2: Configure PETSc:
 ./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --download-f2cblaslapack --download-mpich
--> follow the instructions in the terminal and install PETSc
+-> follow the instructions in the terminal and make + makeinstall PETSc
 
 Step 3: Search for the shared object file (.so) "libpetsc.so". In my case it was in:
 "${PETSC_DIR}/${PETSC_ARCH}/lib/libpetsc.so"
