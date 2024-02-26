@@ -1,4 +1,4 @@
-Compile command for Helloworld.cpp using CMake and PETSc
+Compile command for HelloWorld.cpp using CMake and PETSc
 ------------------------------------------------------------------
 
 cmake \
