@@ -4,6 +4,13 @@ Example code: HelloWorld.cpp
 
 PETSc builind:
 Step 1: Follow the steps as provided in the website:
+https://petsc.org/release/install/download/
+
+git clone -b release https://gitlab.com/petsc/petsc.git petsc
+
+Step 2: Configure PETSc:
+./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --download-f2cblaslapack --download-mpich
+
 
 
 
