@@ -16,7 +16,7 @@ ierr = MPI_Comm_rank(PETSC_COMM_WORLD, &rank);CHKERRQ(ierr);
 PetscCallMPI(MPI_Comm_rank(PETSC_COMM_WORLD, &rank));
 
 
-PetscPrintf(PETSC_COMM_SELF,"Hello World from : \t %d\n",rank);
+PetscPrintf(PETSC_COMM_SELF,"Hello World from processor rank: \t %d\n",rank);
 return PetscFinalize();
 }
 
