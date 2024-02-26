@@ -1,4 +1,4 @@
-/* This is the main function to call helloworld by MPI uing PETSc */
+/* This is the main function to call helloworld via MPI uing PETSc */
 
 #include<bits/stdc++.h>
 #include <petsc.h>
