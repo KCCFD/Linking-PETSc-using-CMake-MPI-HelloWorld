@@ -25,9 +25,15 @@ cmake \
 -DPETSCLIB=${PETSC_DIR}/${PETSC_ARCH}/lib/libpetsc.so \
 ../src
 
- Step 5: make
+Step 5:
+make
 
  Compilation done if successful. Thanks!!!
+ 
+Step 6: 
+Run:
+
+$PETSC_DIR/$PETSC_ARCH/bin/mpirun -n <nprocs> ./HelloWorld
 
 
 
