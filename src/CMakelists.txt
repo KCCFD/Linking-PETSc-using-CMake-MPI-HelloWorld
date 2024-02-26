@@ -11,7 +11,6 @@ MESSAGE(STATUS "PETSC LIB : " ${PETSCLIB})
 MESSAGE(STATUS "PETSC INCLUDE : " ${PETSCINC})
 
 
-#file(GLOB SOURCES "../src/*.cpp" "${PETSC_DIR}/include/*.h")
 file(GLOB SOURCES "../src/*.cpp")
 
 add_executable(HelloWorld ${SOURCES})
