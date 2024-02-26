@@ -1,1 +1,22 @@
+cmake_minimum_required(VERSION 3.20.3)
 
+project(Helloworld_PETSc_MPI)
+
+
+INCLUDE_DIRECTORIES(${PETSC_DIR}/${PETSC_ARCH}/include)
+
+MESSAGE(STATUS "CMAKE_C_COMPILER: " ${CMAKE_C_COMPILER})
+MESSAGE(STATUS "CMAKE_CXX_COMPILER: " ${CMAKE_CXX_COMPILER})
+MESSAGE(STATUS "PETSC LIB : " ${PETSCLIB})
+MESSAGE(STATUS "PETSC INCLUDE : " ${PETSCINC})
+
+
+#file(GLOB SOURCES "../src/*.cpp" "${PETSC_DIR}/include/*.h")
+file(GLOB SOURCES "../src/*.cpp")
+
+add_executable(HelloWorld ${SOURCES})
+
+target_include_directories(HelloWorld PRIVATE ${PETSCINC})
+
+
+target_link_libraries(HelloWorld ${PETSCLIB})
