@@ -31,7 +31,7 @@ cmake \
 Step 5: 
 make
 
- Compilation done if successful. Thanks!!!
+ Compilation done if successful. Your exeutable <HelloWorld> is in the build folder. Thanks!!!
 
 Step 6: 
 Run:
